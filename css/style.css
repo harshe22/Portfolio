@@ -1,0 +1,125 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #2c3e50;
+    background: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Navigation */
+header {
+    background: #34495e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 32px;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1abc9c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    font-size: 24px;
+    color: #1abc9c;
+    margin-bottom: 10px;
+}
+
+main section p, main section ul {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+main section ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
